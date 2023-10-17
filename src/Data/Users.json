@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1696884973382,
+    "first_name": "prueba",
+    "last_name": "prueba-01",
+    "email": "prueba@gmail.com",
+    "age": 30,
+    "password": "$2b$10$F1G9b38.pTPzauAUmtD8mObZSxc5FT7nC6FiuO92DWn5mUTjf5MOm",
+    "logedBy": "WebPage",
+    "role": "user"
+  }
+
+]
