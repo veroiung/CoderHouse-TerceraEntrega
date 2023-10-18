@@ -110,15 +110,3 @@ export default class UserService {
 
 }
 
-    /*     findByUsername = async (userName) => {
-        let result = await userModel.findOne({ userName });
-        return result;
-    }; */
-
-/*     update = async (filter, value) => {
-        let result = await userModel.updateOne(filter, value);
-        return result;
-    }; */
-
-
-
