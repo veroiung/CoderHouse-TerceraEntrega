@@ -17,7 +17,7 @@ export default class CartServices {
             return cart; 
         } else {
             return null;
-            }
+        }
     };
 
     //services add product to cart

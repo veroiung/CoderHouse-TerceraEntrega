@@ -5,9 +5,9 @@
     <div style="border: 2px rgb(89, 85, 85) solid; justify-content: center; border-radius: 10px; padding:10px;  width:400px; height: 300px; ">
         <h2>Title: {{{this.title}}}</h2>
         <h3>Description: {{this.description}}</h3>
-        <h3>Price:  {{this.price}}</h3>
-        <div>{{this.thumbnail}}</div>
-        <p>Stock: {{this.stock}}</p>
+        <h3>Price:  ${{this.price}}</h3>
+        <img style="width: 100px; height: 100px" src={{this.thumbnail}}></img>
+        {{!-- <p>Stock: {{this.stock}}</p> --}}
         <br>
         <div style="display: flex; justify-content:center; align-items: center; width:100%;">
         <button style="padding: 10px 8px; border-radius: 20px; background-color:rgb(84, 85, 82); color:azure" id={{this.id}} value= "1"  >AGREGAR AL CARRITO</button>
@@ -38,8 +38,6 @@
 {{else}}
 <h1>No hay productos para mostrar</h1>
 {{/if}}
-
-
 
 
 

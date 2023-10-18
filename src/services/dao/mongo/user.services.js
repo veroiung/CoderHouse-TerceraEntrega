@@ -49,18 +49,15 @@ export default class UserService {
 
     login = async (email, password, res) => {
             const exists = await userModel.findOne({ email });
-            if (!exists) {
-                return console.log("Usuario no encontrado");
-                }
-            if (!isValidPassword(exists, password)) {
-                return console.log("Los datos ingresados son incorrectos");
+            if (!exists || !isValidPassword(exists, password)) {
+                return console.log("El usuario o la contraseña son incorrectos");
             }
-                let cartData = await cartServices.getCartById(exists.carts[0].cart._id)
+            let cartData = await cartServices.getCartById(exists.cart_id)
             const tokenUser = {
                 name: `${exists.first_name} ${exists.last_name}`,
                 email: exists.email,
                 role: exists.role,
-                cart: exists.carts[0].cart._id,
+                cart: exists.cart_id,
                 cartLength: cartData.products.length
             };
             const accessToken = generateToken(tokenUser);

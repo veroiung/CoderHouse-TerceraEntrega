@@ -30,9 +30,9 @@ export default class MongoSingleton {
                 // Cambiar el nivel de escritura a 1 (menos seguro pero más rápido)
                 w: 1,
             })
-            console.log("Conectado con exito a MongoDB usando Moongose.");
+            console.log("Conectado con exito a MongoDB usando Mongoose.");
         } catch (error){
-            console.error("No se pudo conectar a la BD usando Moongose: " + error);
+            console.error("No se pudo conectar a la BD usando Mongoose: " + error);
             process.exit();   
         }
     }
