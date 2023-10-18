@@ -70,20 +70,3 @@ accessAdmin.addEventListener('click', e => {
     e.preventDefault();
     window.location.replace(`/api/users/private/admin`);
 });
-
-/* btnAdmin.addEventListener('click', e => {
-    e.preventDefault();
-    alert('Acceso denegado');
-}) */
-
-/* document.addEventListener('DOMContentLoaded', function() {
-    // Coloca aquí el código para agregar eventos a los botones "admin"
-    const adminButtons = document.getElementsByClassName('admin');
-
-    for (let i = 0; i < adminButtons.length; i++) {
-        adminButtons[i].addEventListener('click', function() {
-            alert('Alerta: Botón de administrador clickeado');
-            // Agrega aquí cualquier otra lógica que desees ejecutar cuando se haga clic en el botón de administrador
-        });
-    }
-}); */
